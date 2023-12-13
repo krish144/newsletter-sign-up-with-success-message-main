@@ -1,0 +1,159 @@
+:root{
+    --color-Tomato: hsl(4, 100%, 67%);
+    --color-DarkSlateGrey: hsl(234, 29%, 20%);
+    --color-CharcoalGrey: hsl(235, 18%, 26%);
+    --colorGrey: hsl(231, 7%, 60%);
+    --colorWhite: hsl(0, 0%, 100%);
+    --bs-body-font-size:16px;
+}
+
+
+*,
+::after,
+::before{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--color-DarkSlateGrey) !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100dvh;
+}
+
+#sign_up_form{
+    background: #fff;
+    max-width: 900px;
+    height: 600px;
+    padding:15px 15px 15px 0px;
+    border-radius: 35px;
+}
+
+#sign_up_form div:first-child{
+    padding:25px 50px 20px ;
+    color:var(--color-DarkSlateGrey);
+}
+
+#sign_up_form div:first-child h1{
+    font-size: 54px;
+    font-weight: 700;
+    
+}
+
+#sign_up_form div:first-child p{
+    padding: 15px 0;
+    font-weight: 500;
+}
+
+#sign_up_form div:first-child ul{
+    list-style-type: none;
+    padding: 0;
+    line-height: 30px;
+    font-weight: 500;
+}
+
+#sign_up_form div:first-child ul li img{
+    margin-right: 10px;
+}
+
+#sign_up_form div:first-child #email_form label{
+    font-size: 14px;
+    font-weight: 700;
+}
+
+#email-error{
+    display: block;
+    color: red;
+    font-weight: 500 !important;
+    margin-top: -8px;
+}
+
+#sign_up_form div:first-child #email_form input{
+    display: block;
+    width: 100%;
+    padding: 14px 10px;
+    margin: 5px 0 10px;
+    border-radius: 8px;
+    border: 1px solid black;
+}
+
+.form-btn{
+    all:unset;
+    width: 95%;
+    text-align: center;
+    padding: 13px 10px;
+    border-radius: 8px;
+    color:var(--colorWhite);
+    font-weight: 600;
+    background-color: var(--color-DarkSlateGrey);
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+
+.form-btn:hover{
+    background-color: var(--color-Tomato);
+    box-shadow: rgba(255, 98, 87, 0.25) 0px 14px 28px, rgba(255, 98, 87, 0.22) 0px 10px 10px;
+}
+
+#sign_up_form .sign-up-img{
+    height: 580px;
+}
+
+
+ /* Success message start  */
+
+ #form_success_container{
+    display: none;
+    max-width: 450px;
+    background: #fff;
+    padding: 59px 66px;
+    border-radius: 35px;
+ }
+
+ #form_success_container div img{
+    width: 55px;
+ }
+
+ #form_success_container h2{
+    font-size: 46px;
+    font-weight: 700;
+    line-height: 46px;
+    margin: 25px 0;
+ }
+
+ #form_success_container p{
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: 400;
+ }
+
+@media(max-width:600px){
+    #sign_up_form{
+        height: auto;
+        width: 100dvw;
+        padding: 0px;
+        border-radius: 0px;
+    }
+    #sign_up_form .sign-up-img{
+        width: 100%;
+        height: auto;
+    }
+
+    #sign_up_form div:first-child h1{
+        font-size: 42px;
+    }
+
+    #form_success_container{
+        width: 100dvw;
+        height: 100dvh;
+        border-radius: 0;
+    }
+
+    #form_success_container p{
+        padding-bottom: 80%;
+    }
+}

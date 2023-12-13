@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Newsletter sign-up form with success message</title>
+
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!-- Bootstrap Link -->
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+
+
+
+</head>
+<body>
+
+  <main>
+  <!-- Sign-up form start -->
+
+  <div id="sign_up_form_container">
+ 
+  <div id="sign_up_form" class="d-flex align-items-center justify-content-center flex-lg-row flex-md-row flex-column-reverse" >
+
+  <div>
+  <h1 class="h1">Stay updated!</h1>
+
+  <p>Join 60,000+ product managers receiving monthly updates on:</p>
+
+  <ul>
+  <li><img src="./assets/images/icon-list.svg" alt="icon-list" class="sign-up-lists">Product discovery and building what matters</li>
+  <li><img src="./assets/images/icon-list.svg" alt="icon-list"class="sign-up-lists"> Measuring to ensure updates are a success</li>
+  <li><img src="./assets/images/icon-list.svg" alt="icon-list"class="sign-up-lists"> And much more!</li>
+  </ul>
+
+  <form action="" id="email_form" class="mt-4">
+  <label for="email">Email address</label>
+  <input type="email" name="email" id="email" placeholder="email@company.com" required/> 
+
+  <button class="mt-3 form-btn" id="email_form_submit_btn">Subscribe to monthly newsletter</button> 
+  </form>
+</div>
+
+<div>
+  <picture>
+    <source media="(max-width:500px)" srcset="./assets/images/illustration-sign-up-mobile.svg">
+    <img src="./assets/images/illustration-sign-up-desktop.svg" alt="sign-up-pictrue" class="sign-up-img">
+  </picture>
+</div>
+
+   </div>
+
+</div>
+
+  <!-- Sign-up form end -->
+
+  <!-- Success message start -->
+
+  <div id="form_success_container">
+    <div>
+      <img src="./assets/images/icon-success.svg" alt="icon-success" >
+    </div>
+  <h2>Thanks for subscribing!</h2>
+
+  <p class="mb-4">A confirmation email has been sent to <b id="email_name"></b>. 
+  Please open it and click the button inside to confirm your subscription.</p>
+
+  <button class="form-btn" id="dismiss_btn">Dismiss message</button>
+</div>
+
+
+</main>
+
+<!-- Bootstrap Links -->
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+
+<!-- Jquery Links -->
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.20.0/jquery.validate.min.js" integrity="sha512-WMEKGZ7L5LWgaPeJtw9MBM4i5w5OSBlSjTjCtSnvFJGSVD26gE5+Td12qN5pvWXhuWaWcVwF++F7aqu9cvqP0A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+<!-- Script Links -->
+
+<script src="./assets/js/main.js"></script>
+
+</body>
+</html>
